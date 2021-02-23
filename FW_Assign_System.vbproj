@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{92FE5209-B0C9-4EAD-A706-34EDFC61BCE0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FW_Assign_System.My.MyApplication</StartupObject>
+    <RootNamespace>FW_Assign_System</RootNamespace>
+    <AssemblyName>FW_Assign_System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FW_Assign_System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FW_Assign_System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8_computer_support.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>FW_Assign_System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>FW_Assign_System.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.Designer.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v19.2.UI, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.UI, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.Wizard, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EPPlus, Version=4.5.3.3, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>packages\EPPlus.4.5.3.3\lib\net40\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.TDAPIOLELib">
+      <HintPath>\\10.169.88.40\Q-Portal\resource\Interop.TDAPIOLELib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\resource\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\WindowsAPICodePack-Core.1.1.2\lib\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\WindowsAPICodePack-Shell.1.1.1\lib\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>packages\MySql.Data.8.0.19\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="ToggleSwitch">
+      <HintPath>\\10.169.88.40\Q-Portal\resource\ToggleSwitch.dll</HintPath>
+    </Reference>
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>packages\MySql.Data.8.0.19\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WinControls.ListView">
+      <HintPath>\\10.169.88.40\Q-Portal\resource\WinControls.ListView.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fw_sys_ver_third\1. Administrator\uc_m_level_upload.Designer.vb">
+      <DependentUpon>uc_m_level_upload.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\1. Administrator\uc_m_level_upload.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\2. Model_Leader\uc_s_search.Designer.vb">
+      <DependentUpon>uc_s_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\2. Model_Leader\uc_s_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\c_db.vb" />
+    <Compile Include="fw_sys_ver_third\0. Menu\FAS_select_project.Designer.vb">
+      <DependentUpon>FAS_select_project.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\0. Menu\FAS_select_project.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\1. Administrator\Administrator_Form.Designer.vb">
+      <DependentUpon>Administrator_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\1. Administrator\Administrator_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\3. Tester\Tester_Form.Designer.vb">
+      <DependentUpon>Tester_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\3. Tester\Tester_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\Addmin_System.vb" />
+    <Compile Include="fw_sys_ver_third\Main_index.Designer.vb">
+      <DependentUpon>Main_index.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\Main_index.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\0. Menu\menu_select_screen.Designer.vb">
+      <DependentUpon>menu_select_screen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\0. Menu\menu_select_screen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QPortal.vb" />
+    <Compile Include="fw_sys_ver_third\1. Administrator\uc_m_member.Designer.vb">
+      <DependentUpon>uc_m_member.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\1. Administrator\uc_m_member.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\1. Administrator\uc_m_manage.Designer.vb">
+      <DependentUpon>uc_m_manage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\1. Administrator\uc_m_manage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\sun_chart_class.vb" />
+    <Compile Include="TEST.Designer.vb">
+      <DependentUpon>TEST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TEST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Version_2\%280%29 Manage\uc_m_model.Designer.vb">
+      <DependentUpon>uc_m_model.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Version_2\%280%29 Manage\uc_m_model.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Version_2\%280%29 Manage\uc_m_view.Designer.vb">
+      <DependentUpon>uc_m_view.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Version_2\%280%29 Manage\uc_m_view.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Version_2\%281%29 Add_아이템등록\uc_a_add.Designer.vb">
+      <DependentUpon>uc_a_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Version_2\%281%29 Add_아이템등록\uc_a_add.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\0. New_Project\FW_ADD_MODEL.Designer.vb">
+      <DependentUpon>FW_ADD_MODEL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\0. New_Project\FW_ADD_MODEL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\2. Model_Leader\uc_a_add_fw.Designer.vb">
+      <DependentUpon>uc_a_add_fw.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\2. Model_Leader\uc_a_add_fw.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\2. Model_Leader\uc_a_assign_fw.Designer.vb">
+      <DependentUpon>uc_a_assign_fw.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\2. Model_Leader\uc_a_assign_fw.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\Assign_System_for_Assign.vb" />
+    <Compile Include="fw_sys_ver_third\0. Menu\menu_frame.Designer.vb">
+      <DependentUpon>menu_frame.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\0. Menu\menu_frame.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\2. Model_Leader\Model_Leader_Form.Designer.vb">
+      <DependentUpon>Model_Leader_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\2. Model_Leader\Model_Leader_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Version_2\공통\FW_SELECT_MODEL.Designer.vb">
+      <DependentUpon>FW_SELECT_MODEL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Version_2\공통\FW_SELECT_MODEL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\Common\FW_CHART.Designer.vb">
+      <DependentUpon>FW_CHART.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\Common\FW_CHART.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\3. Tester\uc_r_plan.Designer.vb">
+      <DependentUpon>uc_r_plan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\3. Tester\uc_r_plan.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Version_2\%283%29 Random_랜덤기획\uc_r_view.Designer.vb">
+      <DependentUpon>uc_r_view.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Version_2\%283%29 Random_랜덤기획\uc_r_view.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\3. Tester\uc_r_defect.Designer.vb">
+      <DependentUpon>uc_r_defect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\3. Tester\uc_r_defect.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\3. Tester\FW_w_result.Designer.vb">
+      <DependentUpon>FW_w_result.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fw_sys_ver_third\3. Tester\FW_w_result.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Version_2\%286%29 수평전개\uc_d_share.Designer.vb">
+      <DependentUpon>uc_d_share.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Version_2\%286%29 수평전개\uc_d_share.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="fw_sys_ver_third\0. Menu\FAS_select_project.resx">
+      <DependentUpon>FAS_select_project.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fw_sys_ver_third\1. Administrator\Administrator_Form.resx">
+      <DependentUpon>Administrator_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fw_sys_ver_third\1. Administrator\uc_m_level_upload.resx">
+      <DependentUpon>uc_m_level_upload.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fw_sys_ver_third\3. Tester\Tester_Form.resx">
+      <DependentUpon>Tester_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fw_sys_ver_third\2. Model_Leader\uc_s_search.resx">
+      <DependentUpon>uc_s_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fw_sys_ver_third\Main_index.resx">
+      <DependentUpon>Main_index.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fw_sys_ver_third\0. Menu\menu_select_screen.resx">
+      <DependentUpon>menu_select_screen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fw_sys_ver_third\1. Administrator\uc_m_member.resx">
+      <DependentUpon>uc_m_member.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TEST.resx">
+      <DependentUpon>TEST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Version_2\%280%29 Manage\uc_m_view.resx">
+      <DependentUpon>uc_m_view.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fw_sys_ver_third\1. Administrator\uc_m_manage.resx">
+      <DependentUpon>uc_m_manage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Version_2\%280%29 Manage\uc_m_model.resx">
+      <DependentUpon>uc_m_model.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Version_2\%281%29 Add_아이템등록\uc_a_add.resx">
+      <DependentUpon>uc_a_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fw_sys_ver_third\0. New_Project\FW_ADD_MODEL.resx">
+      <DependentUpon>FW_ADD_MODEL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fw_sys_ver_third\2. Model_Leader\uc_a_add_fw.resx">
+      <DependentUpon>uc_a_add_fw.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fw_sys_ver_third\2. Model_Leader\uc_a_assign_fw.resx">
+      <DependentUpon>uc_a_assign_fw.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fw_sys_ver_third\0. Menu\menu_frame.resx">
+      <DependentUpon>menu_frame.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fw_sys_ver_third\2. Model_Leader\Model_Leader_Form.resx">
+      <DependentUpon>Model_Leader_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Version_2\공통\FW_SELECT_MODEL.resx">
+      <DependentUpon>FW_SELECT_MODEL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fw_sys_ver_third\Common\FW_CHART.resx">
+      <DependentUpon>FW_CHART.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fw_sys_ver_third\3. Tester\uc_r_plan.resx">
+      <DependentUpon>uc_r_plan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Version_2\%283%29 Random_랜덤기획\uc_r_view.resx">
+      <DependentUpon>uc_r_view.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fw_sys_ver_third\3. Tester\uc_r_defect.resx">
+      <DependentUpon>uc_r_defect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fw_sys_ver_third\3. Tester\FW_w_result.resx">
+      <DependentUpon>FW_w_result.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Version_2\%286%29 수평전개\uc_d_share.resx">
+      <DependentUpon>uc_d_share.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons8_computer_support.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Version_2\%282%29 Assign_업무할당\" />
+    <Folder Include="Version_2\%284%29 Write_결과입력\" />
+    <Folder Include="Version_2\%285%29 Search_결과조회\" />
+    <Folder Include="Version_2\NewFolder1\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
